@@ -38,12 +38,12 @@ router.post('/users', (req : Request,res : Response)=>{
     console.log(req.body)
     users.push(req.body)
     console.log(users)
-    res.status(201).json({message: "User successfully added"})
+    res.json({message: "User successfully added"})
 })
 
 
 router.get('/users', (req : Request,res : Response)=>{
-    res.json(users)
+    res.status(201).json(users)
 })
 
 export default router
