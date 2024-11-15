@@ -23,7 +23,7 @@ router.post('/users', (req, res) => {
     console.log(req.body);
     users.push(req.body);
     console.log(users);
-    res.json("User succesfully added");
+    res.json({ message: "User succesfully added" });
 });
 router.get('/users', (req, res) => {
     res.json(users);
