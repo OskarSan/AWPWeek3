@@ -26,10 +26,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
         })
         
         console.log(await userData.json())
+
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
     })
 
     getUsersButton.addEventListener('click', async (event) => {
-        
+    
         event.preventDefault();
 
         const userData = await fetch('/users')
