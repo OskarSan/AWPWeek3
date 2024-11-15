@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         const usersJSON = await userData.json()
 
         console.log(usersJSON)
-        usersJSON.forEach((user) =>{
+        usersJSON.users.forEach((user) =>{
             
             const listEntry = document.createElement('li');
             
