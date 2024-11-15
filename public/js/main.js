@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', ()=>{
     const userform = document.getElementById("userForm")
-    const getUsersButton = document.getElementById("getUser")
+    const getUsersButton = document.getElementById("getUsers")
     const userList = document.getElementById("userList")
     
     userform.addEventListener('submit', async (event)=>{
