@@ -13,6 +13,7 @@ const router: Router = Router()
 
 router.get('/hello', (req : Request,res : Response)=>{
     res.json({ msg: "Hello world!" });
+    console.log("jauuu")
 })
 
 

@@ -5,6 +5,7 @@ let users = [];
 const router = (0, express_1.Router)();
 router.get('/hello', (req, res) => {
     res.json({ msg: "Hello world!" });
+    console.log("jauuu");
 });
 router.get('/echo/:id', (req, res) => {
     console.log(req);
